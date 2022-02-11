@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+a,
+.form-group,
+input {
+  color: #6c899e !important;
+}
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.btn-theme {
+  background-color: #3cb7b4;
+  color: #fff;
+  border-radius: 100px;
+  padding: 5px 20px 5px 20px;
+}
+small {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6c899e;
+  font-size: 10px;
+  letter-spacing: 0.9px;
+  position: relative;
+}
+small:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 20px;
+  background: #3cb7b4;
+}
+.control {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 19px;
+  line-height: 33px;
+  color: #6c899e;
+  font-weight: 500;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 28px;
+  width: 28px;
+  background: transparent;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: transparent;
+  border: 2px solid #3cb7b4;
+}
+.control input:checked ~ .control__indicator {
+  background: transparent;
+  border: 2px solid #3cb7b4;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: transparent;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+  left: 8px;
+  top: 2px;
+  width: 8px;
+  height: 16px;
+  border: solid #3cb7b4;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 1024px) {
+  .control {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .control__indicator {
+    height: 23px;
+    width: 23px;
+  }
+  .control--checkbox .control__indicator:after {
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+  }
+  .signature .signature-pad {
+    height: 146px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .control__indicator {
+    height: 20px;
+    width: 20px;
+  }
+  .control {
+    padding-left: 28px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .control--checkbox .control__indicator:after {
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 11px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .control {
+    font-size: 12px;
+    padding-left: 21px;
+    line-height: 21px;
+  }
+  .control__indicator {
+    height: 17px;
+    width: 17px;
+  }
+  .control--checkbox .control__indicator:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+  }
+  .col-6.col-md-4.col-lg-4 {
+    padding: 0 0px 0 10px;
+  }
+}

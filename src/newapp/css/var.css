@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+a,
+.form-group,
+input {
+  color: #6c899e !important;
+}

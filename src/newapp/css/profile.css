@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+a,
+.form-group,
+input {
+  color: #6c899e !important;
+}
+html,
+body {
+  height: 100%;
+  background-color: #eaeff3;
+}
+.ma_in_profile {
+  min-height: 900px;
+  background: #fff;
+  border-radius: 9px;
+  /*box-shadow: 0px 6px 10px #eaeaea;*/
+  overflow: hidden;
+}
+.ma_in_profile header {
+  padding: 15px 50px 15px 50px;
+  border-bottom: 3px solid #ececec;
+}
+.ma_in_profile .t_op {
+  position: relative;
+}
+.ma_in_profile .pr_ofile {
+  padding: 30px 50px 15px 50px;
+}
+.ma_in_profile .bg_pro:before {
+  content: '';
+  height: 150%;
+  width: 105%;
+  position: absolute;
+  background: #f9f9f9;
+  left: -50px;
+  top: -30px;
+  box-shadow: 0px 7px 10px #e2e2e2;
+}
+.ma_in_profile .up_pro {
+  position: relative;
+  width: 240px;
+  height: 270px;
+  overflow: hidden;
+}
+.ma_in_profile .up_pro .profile_picture {
+  width: 210px;
+  height: 210px;
+  background: #fdfdfd;
+  border: 1px solid #ececec;
+  z-index: 3;
+  border-radius: 330px;
+  position: relative;
+  object-fit: contain;
+  align-items: center;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.ma_in_profile .up_pro .profile_picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ma_in_profile .upload {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  margin-top: 14px;
+}
+.ma_in_profile .btn-upload {
+  width: 100%;
+  cursor: pointer;
+  background: #3cb7b4;
+  padding: 6px 0 10px 0;
+  border-radius: 100px;
+}
+.ma_in_profile img.camera {
+  width: 23px;
+}
+.t_op input {
+  border: none;
+  outline: 0;
+}
+.t_op input.name {
+  font-size: 26px;
+  font-weight: 600;
+  color: #313131;
+}
+.t_op input.phone,
+.t_op input.email {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2196f3;
+  width: 70%;
+  letter-spacing: 0.5px;
+}
+.t_op input.input_ad {
+  border-bottom: 1px solid #ccc;
+  font-weight: 500;
+  width: 40%;
+  border: 1px solid #eaeaea;
+  padding: 10px 10px 10px 10px;
+  font-size: 13px;
+  background: #fcfdfe;
+  border-radius: 4px;
+  height: 44px;
+}
+.t_op label {
+  font-size: 16px;
+  font-weight: 500;
+  width: 170px;
+  color: #6c899e;
+}
+.t_op.side label {
+  width: 90px;
+}
+.t_op.side input.input_ad {
+  width: 44%;
+}
+.gender .gen {
+  font-size: inherit;
+}
+.gender label {
+  font-size: 13px;
+}
+.gender input[type='radio'] + label:before {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.gender input[type='radio'] + label:hover:after,
+.gender input[type='radio']:checked + label:after {
+  content: '\2022';
+  position: absolute;
+  top: 0px;
+  font-size: 19px;
+  line-height: 20px;
+}
+.gender input[type='radio'] + label:hover:after {
+  color: #c7c7c7;
+}
+.gender input[type='radio']:checked + label:after,
+.gender input[type='radio']:checked + label:hover:after {
+  color: #fff;
+}
+.gender input[type='radio'] {
+  display: none;
+  cursor: pointer;
+}
+.gender input[type='radio']:focus,
+.gender input[type='radio']:active,
+.gender input[type='checkbox']:focus,
+.gender input[type='checkbox']:active {
+  outline: none;
+}
+.gender input[type='radio'] + label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 10px;
+  width: 90px;
+  color: #0b4c6a;
+}
+.gender input[type='radio'] + label:before,
+.gender input[type='radio'] + label:after {
+  content: '';
+  font-family: helvetica;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+}
+.gender input[type='radio'] + label:before {
+  background-color: #dedede;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.gender input[type='radio'] + label:after {
+  color: #fff;
+}
+.gender input[type='radio']:checked + label:before {
+  -webkit-box-shadow: inset 0 0 0 10px #158ec6;
+  -moz-box-shadow: inset 0 0 0 10px #158ec6;
+  box-shadow: inset 0 0 0 10px #158ec6;
+}
+@media screen and (max-width: 1024px) {
+  .ma_in_profile header {
+    padding: 1px 0 0px 0;
+  }
+  .ma_in_profile header .navbar-brand {
+    display: block;
+    margin: 0 auto;
+  }
+  .ma_in_profile header .navbar-brand img {
+    width: 152px;
+  }
+  .ma_in_profile .pr_ofile {
+    padding: 20px 10px 15px 10px;
+  }
+  .ma_in_profile .t_op.side {
+    display: none;
+  }
+  .ma_in_profile .bg_pro:before {
+    content: '';
+    height: 150%;
+    width: 105%;
+    position: absolute;
+    background: #f9f9f9;
+    left: -50px;
+    top: -30px;
+    box-shadow: 0px 7px 10px #e2e2e2;
+  }
+  .ma_in_profile .up_pro {
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 190px;
+  }
+  .ma_in_profile .up_pro .profile_picture {
+    width: 110px;
+    height: 110px;
+  }
+  .ma_in_profile .t_op label {
+    font-size: 13px;
+    width: 104px;
+  }
+  .ma_in_profile .t_op input.input_ad {
+    border-bottom: 1px solid #ccc;
+    font-weight: 500;
+    width: 62%;
+  }
+  .ma_in_profile .t_op input.name {
+    font-size: 20px;
+  }
+  .ma_in_profile .gender .gen {
+    font-size: 13px;
+  }
+  .ma_in_profile .gender input[type='radio'] + label {
+    padding-left: 14px;
+    margin-right: 6px;
+    width: auto;
+  }
+  .ma_in_profile .gender input[type='radio'] + label:before,
+  .ma_in_profile .gender input[type='radio'] + label:after {
+    content: '';
+    font-family: helvetica;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    left: -1px;
+    bottom: 3px;
+    text-align: center;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    background-color: #3cb7b4;
+  }
+  .h-100 {
+    height: auto !important;
+  }
+  .ma_in_profile {
+    margin: 15px 0 15px 0;
+  }
+  .ma_in_profile header {
+    padding: 1px 0 0px 0;
+  }
+  .ma_in_profile header .navbar-brand {
+    display: block;
+    margin: 0 auto;
+  }
+  .ma_in_profile header .navbar-brand img {
+    width: 152px;
+  }
+  .ma_in_profile .pr_ofile {
+    padding: 20px 0px 15px 0px;
+  }
+  .ma_in_profile .t_op.side {
+    display: none;
+  }
+  .ma_in_profile .bg_pro:before {
+    content: '';
+    height: 133%;
+    width: 100%;
+    position: absolute;
+    background: #f7f7f7;
+    left: 0;
+    top: -22px;
+    box-shadow: none;
+  }
+  .ma_in_profile .up_pro {
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 190px;
+  }
+  .ma_in_profile .up_pro .profile_picture {
+    width: 110px;
+    height: 110px;
+  }
+  .ma_in_profile .t_op label {
+    font-size: 13px;
+    width: 104px;
+  }
+  .ma_in_profile .t_op input.input_ad {
+    border-bottom: 1px solid #ccc;
+    font-weight: 500;
+    width: 62%;
+  }
+  .ma_in_profile .t_op input.name {
+    font-size: 20px;
+  }
+  .ma_in_profile .gender .gen {
+    font-size: 13px;
+  }
+  .ma_in_profile .gender input[type='radio'] + label {
+    padding-left: 14px;
+    margin-right: 6px;
+    width: auto;
+  }
+  .ma_in_profile .gender input[type='radio'] + label:before,
+  .ma_in_profile .gender input[type='radio'] + label:after {
+    content: '';
+    font-family: helvetica;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    left: -1px;
+    bottom: 3px;
+    text-align: center;
+    position: absolute;
+  }
+}

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+a,
+.form-group,
+input {
+  color: #6c899e !important;
+}
+html,
+body {
+  height: 100%;
+}
+.inf_o {
+  background-image: url(../img/back.jpg);
+  background-color: #3cb7b4;
+  border-radius: 0 9px 9px 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.inf_o .mac {
+  background-image: url(../img/mac.png);
+  height: 260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.inf_o #cara {
+  width: 356px;
+  position: absolute;
+  top: 15px;
+  left: 66px;
+}
+.inf_o #cara ol li h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: capitalize;
+}
+.inf_o #cara ol li p {
+  color: #065852;
+  font-size: 13px;
+  text-transform: capitalize;
+  margin: 23px 0 0 0;
+  font-weight: 500;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
+
+@mon:'Montserrat', sans-serif;
+
+@theme-color:#3cb7b4;
+
+@textclr:#6c899e;
+
+a,.form-group,input{
+    color: @textclr !important;
+}
+.radius(@radius){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;  
+    -moz-transition:    @transition;
+    -ms-transition:     @transition; 
+    -o-transition:      @transition;
+}
+.box-shadow (@shadow) {
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow:    @shadow;
+    box-shadow:         @shadow;
+}
+
+.transform(@transform){
+    -webkit-transform:   @transform;
+    -moz-transform:      @transform;
+    -ms-transform:       @transform;
+    -o-transform:        @transform;
+    transform:           @transform;
+}
+
+.animation(@animation) {
+    -webkit-animation: @animation;
+    -moz-animation: @animation;
+    animation: @animation;
+}
